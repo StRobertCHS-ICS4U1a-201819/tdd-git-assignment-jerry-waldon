@@ -67,3 +67,6 @@ def test_variance_unusual1():
 def test_variance_unusual2():
    assert(variance([-1,-2,-3,-4,-5]) == 2.5)
 
+def test_variance_unusual2():
+   assert(variance([]) == -1)
+

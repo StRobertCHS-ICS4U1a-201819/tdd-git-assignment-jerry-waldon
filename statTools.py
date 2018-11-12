@@ -170,7 +170,7 @@ def variance(myList):
     """
 
 
-    if myList == [0]:
+    if myList == [0] or len(myList) == 0:
         return -1
     else:
         step1 = sum_val(myList)  # call the sum function to get sum of values in list
