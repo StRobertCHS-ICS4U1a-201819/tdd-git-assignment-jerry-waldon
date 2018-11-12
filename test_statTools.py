@@ -33,15 +33,15 @@ def test_mode_unusual1():
 def test_mode_unusual2():
     assert(mode([2,4,3,3,3,2,2,4,4,4]) == [4])
 
-
 def test_mode_empty():
     assert(mode([]) == 0)
+
 
 def test_lower_quartile_basic1():
    assert(lower_quartile([1,2,3,4,5,6,7]) == 2)
 
 def test_lower_quartile_basic2():
-   assert(lower_quartile([1,2,3,4,5,6,7,8,9,10,11]) == 2)
+   assert(lower_quartile([1,2,3,4,5,6,7,8,9,10,11]) == 3)
 
 
 

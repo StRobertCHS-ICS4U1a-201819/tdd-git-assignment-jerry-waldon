@@ -104,3 +104,21 @@ def bubble_sort(myList):
 
         n -= 1
     return myList
+
+def lower_quartile(myList):
+   """Determine the value that is at the first quarter in the list given. If the number of values at each time when the
+   lists are splited to be half, the range will be the average of two middle values
+
+   :param myList: A list of random integers
+   :return: the value at the first quarter position
+   """
+   
+   len_half_list = round(len(myList)/2)     # get the index position of first half
+
+   position = round(len_half_list/2)
+   low_quartile = position - 1
+   return myList[low_quartile]
+
+   
+
+       
