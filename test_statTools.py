@@ -49,7 +49,7 @@ def test_lower_quartile_basic3():
 def test_lower_quartile_unusual1():
    assert(lower_quartile([1,1,1,1]) == 1)
 
-def test_lower_quartile_unusual1():
+def test_lower_quartile_unusual2():
    assert(lower_quartile([1,4,2,5,6,3]) == 1.5)
 
 
