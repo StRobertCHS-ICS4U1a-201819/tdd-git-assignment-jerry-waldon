@@ -136,7 +136,7 @@ def lower_quartile(myList):
             low_quartile = (sorted_list[position1 - 1] + sorted_list[position2 - 1]) / 2
             return low_quartile
 
-def sum(myList):
+def sum_val(myList):
     """Determine the sum of the values in the list given
 
     :param myList: A list of random integers
@@ -169,10 +169,11 @@ def variance(myList):
     :return: the variance of the list
     """
 
+
     if myList == [0]:
         return -1
     else:
-        step1 = sum(myList)  # call the sum function to get sum of values in list
+        step1 = sum_val(myList)  # call the sum function to get sum of values in list
         step2 = step1 * step1  # calculate the square of the sum of the values in the list
         step3 = step2 / len(myList)  # the result from step2 divided by the length of the list given
         step4 = sum_square(myList)  # call the sum_square function to get the sum of square of each values in the list
@@ -180,7 +181,6 @@ def variance(myList):
         step6 = len(myList) - 1  # get the result of the length of the list subtract 1
         step7 = step5 / step6  # the result from step5 divide by the result from step6
         return step7
-
 
 
    
