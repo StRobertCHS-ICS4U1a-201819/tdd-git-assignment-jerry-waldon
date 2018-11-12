@@ -34,12 +34,12 @@ def mean(myList):
 
 
 def mode(myList):
-    """Determine the list of value that appears with largest frequency in the values in the list given
+    """Determine the value that appears with largest frequency in the values in the list given
 
     :param myList: A list of random integers
-    :return: the list of value that appears with largest frequency
+    :return: the value that appears with largest frequency
     """
-    
+
     # condition when the list is empty
     if len(myList) == 0:
         return 0
@@ -50,25 +50,36 @@ def mode(myList):
 
         appears = 0  # set appears for counting the number of same values appear in the list
         check_appears = 0  # set the check for comparing to get maximum frequency of the values
-        max_appears_val = []  # set a restore list to put the value with maximum frequency
+        max_appears_val = []  # set a restore list to put the value with maximum frequency 
 
         # run the loop before the second last value
         for i in range(len(myList) - 1):
 
-            # count by 1 when the value is equal with the next value
+            # when the value is equal with the next value
             if myList[i] == myList[i+1]:
-                appears += 1
+                appears += 1        # add 1 on appears when the value is equal to the next value
 
-            else:
-                if appears > check_appears:
-                    # record the maximum frequency and restore the value
-                    check_appears = appears
+                # when the value is second last, compare the number of appears 
+                if i == len(myList) - 2:
+
+                  if appears > check_appears:
+                    check_appears = appears     # record the maximum frequency and restore the value
+                    max_appears_val = [myList[i]]       # replace all the value with the value with largest appears
+                  
+                  elif appears == check_appears:
                     max_appears_val.append(myList[i])
+                    appears = 0  # reset the appears to 0
 
-                elif appears == check_appears:
+            # when the value is not equal with the next value
+            elif myList[i] != myList[i+1]:
+               if appears > check_appears:
+                    check_appears = appears     # record the maximum frequency and restore the value
+                    max_appears_val = [myList[i]]       # replace all the value with the value with largest appears
+                  
+               elif appears == check_appears:
                     max_appears_val.append(myList[i])
+                    appears = 0  # reset the appears to 0
 
-                appears = 0  # reset the appears to 0
         return max_appears_val
 
 
