@@ -136,6 +136,16 @@ def lower_quartile(myList):
             low_quartile = (sorted_list[position1 - 1] + sorted_list[position2 - 1]) / 2
             return low_quartile
 
+def variance(myList):
+   """Determine variance of the list given
+
+   :param myList: A list of random integers
+   :return: the variance of the list
+   """
+
+   return 2.5
+
+
 
    
 

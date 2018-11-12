@@ -55,4 +55,7 @@ def test_lower_quartile_unusual2():
 def test_lower_quartile_empty():
    assert(lower_quartile([0]) == 0)
 
+def test_variance_basic1():
+   assert(variance([1,2,3,4,5] == 2.5)
 
+   )
