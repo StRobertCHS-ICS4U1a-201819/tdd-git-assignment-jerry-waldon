@@ -68,7 +68,7 @@ def mode(myList):
                   
                   elif appears == check_appears:
                     max_appears_val.append(myList[i])
-                    appears = 0  # reset the appears to 0
+                  appears = 0  # reset the appears to 0
 
             # when the value is not equal with the next value
             elif myList[i] != myList[i+1]:
@@ -78,7 +78,7 @@ def mode(myList):
                   
                elif appears == check_appears:
                     max_appears_val.append(myList[i])
-                    appears = 0  # reset the appears to 0
+               appears = 0  # reset the appears to 0
 
         return max_appears_val
 
