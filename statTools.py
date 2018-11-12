@@ -112,26 +112,29 @@ def lower_quartile(myList):
     :param myList: A list of random integers
     :return: the value at the first quarter position
     """
-    sorted_list = bubble_sort(myList)  # get sorted list by called bubble_sort function
-
-    len_half_list = round(len(myList) / 2)  # get the index position of first half
-
-    # the condition when the number of values is odd
-    if len_half_list % 2 == 0:
-        position = round(len_half_list / 2)
-        low_quartile = position - 1
-        return sorted_list[low_quartile]
-
-    # the condition when the number of values is even
+    if len(myList) == 0:
+        return 0
     else:
+        sorted_list = bubble_sort(myList)  # get sorted list by called bubble_sort function
 
-        # get the index position of two middle values
-        position1 = round(len_half_list / 2)
-        position2 = position1 - 1
-        print(position1, position2)
+        len_half_list = round(len(myList) / 2)  # get the index position of first half
 
-        low_quartile = (sorted_list[position1 - 1] + sorted_list[position2 - 1]) / 2
-        return low_quartile
+        # the condition when the number of values is odd
+        if len_half_list % 2 == 0:
+            position = round(len_half_list / 2)
+            low_quartile = position - 1
+            return sorted_list[low_quartile]
+
+        # the condition when the number of values is even
+        else:
+
+            # get the index position of two middle values
+            position1 = round(len_half_list / 2)
+            position2 = position1 - 1
+            print(position1, position2)
+
+            low_quartile = (sorted_list[position1 - 1] + sorted_list[position2 - 1]) / 2
+            return low_quartile
 
 
    
