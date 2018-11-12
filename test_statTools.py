@@ -13,14 +13,18 @@ Created:		11/11/2018
 import pytest
 from statTools import *
 
+# tests on mean function
 def test_mean_basic1():
    assert(mean([1,2,3]) == 2)
+
 def test_mean_basic2():
    assert(mean([1,2,3,4,5]) == 3)
+
 def test_mean_empty():
    assert(mean([]) == 0)
 
 
+# tests on mode function
 def test_mode_basic1():
    assert(mode([2,4,3,2,2,2]) == [2])
 
@@ -37,6 +41,7 @@ def test_mode_empty():
     assert(mode([]) == 0)
 
 
+# tests on lower quartile function
 def test_lower_quartile_basic1():
    assert(lower_quartile([1,2,3,4,5,6,7]) == 2)
 
@@ -55,6 +60,8 @@ def test_lower_quartile_unusual2():
 def test_lower_quartile_empty():
    assert(lower_quartile([0]) == 0)
 
+
+# tests on variance function
 def test_variance_basic1():
    assert(variance([1,2,3,4,5]) == 2.5)
 

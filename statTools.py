@@ -89,6 +89,7 @@ def bubble_sort(myList):
     :param myList: list of unsorted integers
     :return: myList: list of sorted integers
     """
+
     # sort a list data from lowest to highest using the bubble sort algorithm
     n = len(myList)
     check = True
@@ -98,12 +99,14 @@ def bubble_sort(myList):
 
         for i in range(n - 1):
             if myList[i] > myList[i + 1]:
+
                 # swap item at myList[i] with the item after it
                 myList[i], myList[i + 1] = myList[i + 1], myList[i]
                 check = True
 
         n -= 1
     return myList
+
 
 def lower_quartile(myList):
     """Determine the value that is at the first quarter in the list given. If the number of values at each time when the
@@ -112,6 +115,7 @@ def lower_quartile(myList):
     :param myList: A list of random integers
     :return: the value at the first quarter position
     """
+
     if len(myList) == 0:
         return 0
     else:
@@ -133,8 +137,9 @@ def lower_quartile(myList):
             position2 = position1 - 1
             print(position1, position2)
 
-            low_quartile = (sorted_list[position1 - 1] + sorted_list[position2 - 1]) / 2
+            low_quartile = (sorted_list[position1 - 1] + sorted_list[position2 - 1]) / 2        # compute the average of the two middle values
             return low_quartile
+
 
 def sum_val(myList):
     """Determine the sum of the values in the list given
@@ -142,6 +147,7 @@ def sum_val(myList):
     :param myList: A list of random integers
     :return: the sum of the values
     """
+
     sum = 0     # set sum as 0
 
     # apply for loop to compute the sum of each values
@@ -149,18 +155,21 @@ def sum_val(myList):
        sum += myList[i]
     return sum
 
+
 def sum_square(myList):
     """Determine the sum of the square of each value in the list given
 
     :param myList: A list of random integers
     :return: the sum of square of each value
     """
+
     sum = 0     # set sum as 0
 
     # apply for loop to compute the sum of square of each values
     for i in range(len(myList)):
         sum += myList[i] * myList[i]
     return sum
+
 
 def variance(myList):
     """Determine variance of the list given
@@ -169,9 +178,9 @@ def variance(myList):
     :return: the variance of the list
     """
 
-
     if myList == [0] or len(myList) == 0:
         return -1
+
     else:
         step1 = sum_val(myList)  # call the sum function to get sum of values in list
         step2 = step1 * step1  # calculate the square of the sum of the values in the list
@@ -181,8 +190,3 @@ def variance(myList):
         step6 = len(myList) - 1  # get the result of the length of the list subtract 1
         step7 = step5 / step6  # the result from step5 divide by the result from step6
         return step7
-
-
-   
-
-       
