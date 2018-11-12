@@ -33,4 +33,7 @@ def test_mode_unusual1():
 def test_mode_unusual2():
     assert(mode([2,4,3,3,3,2,2]) == 2)
 
+def test_mode_empty():
+    assert(mode([]) == 0)
+
 

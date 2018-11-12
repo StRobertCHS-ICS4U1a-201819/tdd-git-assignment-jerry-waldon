@@ -39,22 +39,31 @@ def mode(myList):
    :return: the value that appears with largest frequency
    """
 
-   # get sorted list by called bubble_sort
-   myList = bubble_sort(myList)
+   # condition when the list is empty
+   if len(myList) == 0:
+       return 0
 
-   appears = 0     # set appears for counting the number of same values appear in the list
-   check_appears = 0       # set the check for comparing to get maximum frequency of the values
-   max_appears_val = 0     # set a restore place to put the value with maximum frequency
+   else:
+       # get sorted list by called bubble_sort
+       myList = bubble_sort(myList)
 
-   # run the loop before the second last value
-   for i in range(len(myList)-1):
+       appears = 0     # set appears for counting the number of same values appear in the list
+       check_appears = 0       # set the check for comparing to get maximum frequency of the values
+       max_appears_val = 0     # set a restore place to put the value with maximum frequency
 
-       # count by 1 when the value is equal with the next value
-       if myList[i] == myList[i+1]:
-           appears += 1
+       # run the loop before the second last value
+       for i in range(len(myList)-1):
 
-       else:
-           if appears > check_appears:
-               # record the maximum frequency and restore the value
-               check_appears = appears
-               max_appears_val = myList[appears]
+           # count by 1 when the value is equal with the next value
+           if myList[i] == myList[i+1]:
+               appears += 1
+
+           else:
+               if appears > check_appears:
+
+                   # record the maximum frequency and restore the value
+                   check_appears = appears
+                   max_appears_val = myList[appears]
+
+               appears = 0     # reset the appears to 0
+       return max_appears_val
