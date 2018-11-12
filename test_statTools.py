@@ -12,3 +12,9 @@ Created:		11/12/2018
 
 import pytest
 from statTools import *
+
+"median tests"
+
+
+def test_median_empty():
+    assert(median([]) == 0)
