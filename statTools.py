@@ -34,12 +34,12 @@ def mean(myList):
 
 
 def mode(myList):
-    """Determine the value that appears with largest frequency in the values in the list given
+    """Determine the list of value that appears with largest frequency in the values in the list given
 
     :param myList: A list of random integers
-    :return: the value that appears with largest frequency
+    :return: the list of value that appears with largest frequency
     """
-
+    
     # condition when the list is empty
     if len(myList) == 0:
         return 0

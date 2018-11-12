@@ -22,13 +22,16 @@ def test_mean_empty():
 
 
 def test_mode_basic1():
-   assert(mode([2,4,3,2,2,2]) == 2)
+   assert(mode([2,4,3,2,2,2]) == [2])
 
 def test_mode_basic2():
-   assert(mode([2,4,3,3,3,2]) == 3)
+   assert(mode([2,4,3,3,3,2]) == [3])
 
 def test_mode_unusual1():
     assert(mode([2,4,3,3,3,2,2]) == [2,3])
+
+def test_mode_unusual2():
+    assert(mode([2,4,3,3,3,2,2,4,4,4]) == [4])
 
 
 def test_mode_empty():
