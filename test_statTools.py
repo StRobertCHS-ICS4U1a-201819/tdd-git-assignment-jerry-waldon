@@ -26,3 +26,7 @@ def test_median_basic1():
 
 def test_median_basic2():
     assert(median([9, 8, 7, 6, 5]) == 7)
+
+
+def test_median_unusual1():
+    assert(median([1, 1, 1, 1, 1, 1]) == 1)
