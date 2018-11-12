@@ -137,30 +137,30 @@ def lower_quartile(myList):
             return low_quartile
 
 def sum(myList):
-   """Determine the sum of the values in the list given
+    """Determine the sum of the values in the list given
 
-   :param myList: A list of random integers
-   :return: the sum of the values
-   """
-   sum = 0     # set sum as 0
+    :param myList: A list of random integers
+    :return: the sum of the values
+    """
+    sum = 0     # set sum as 0
 
-   # apply for loop to compute the sum of each values
-   for i in range(len(myList)):
+    # apply for loop to compute the sum of each values
+    for i in range(len(myList)):
        sum += myList[i]
-   return sum
+    return sum
 
 def sum_square(myList):
-   """Determine the sum of the square of each value in the list given
+    """Determine the sum of the square of each value in the list given
 
-   :param myList: A list of random integers
-   :return: the sum of square of each value
-   """
-   sum = 0     # set sum as 0
+    :param myList: A list of random integers
+    :return: the sum of square of each value
+    """
+    sum = 0     # set sum as 0
 
-   # apply for loop to compute the sum of square of each values
-   for i in range(len(myList)):
-       sum += myList[i] * myList[i]
-   return sum
+    # apply for loop to compute the sum of square of each values
+    for i in range(len(myList)):
+        sum += myList[i] * myList[i]
+    return sum
 
 def variance(myList):
    """Determine variance of the list given
@@ -175,9 +175,11 @@ def variance(myList):
    step4 = sum_square(myList)      # call the sum_square function to get the sum of square of each values in the list
    step5 = step4 - step3       # the result from step 4 subtract the result from step3
    step6 = len(myList) - 1     # get the result of the length of the list subtract 1
-   step7 = step5 / step6      # the result from step5 divide by the result from step6
-
-   return step7
+   if step6 == 0:
+       return None
+   else:
+       step7 = step5 / step6      # the result from step5 divide by the result from step6
+       return step7
 
 
 

@@ -56,7 +56,10 @@ def test_lower_quartile_empty():
    assert(lower_quartile([0]) == 0)
 
 def test_variance_basic1():
-   assert(variance([1,2,3,4,5] == 2.5)
+   assert(variance([1,2,3,4,5] == 2.5))
 
 def test_variance_basic2():
    assert(variance([3,21,98,203,17,9]) == 6219.9)
+
+def test_variance_empty():
+   assert(variance([0]) == None
