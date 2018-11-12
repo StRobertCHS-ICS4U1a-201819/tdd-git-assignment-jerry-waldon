@@ -61,5 +61,5 @@ def test_variance_basic1():
 def test_variance_basic2():
    assert(variance([3,21,98,203,17,9]) == 6219.9)
 
-def test_variance_empty():
-   assert(variance([0]) == None
+def test_variance_unusual1():
+   assert(variance([0]) == -1)
