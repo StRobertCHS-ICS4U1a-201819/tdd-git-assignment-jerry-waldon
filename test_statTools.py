@@ -36,4 +36,7 @@ def test_mode_unusual2():
 def test_mode_empty():
     assert(mode([]) == 0)
 
+def test_lower_quartile_basic1():
+   assert(lower_quartile([1,2,3,4,5,6,7]) == 2)
+
 

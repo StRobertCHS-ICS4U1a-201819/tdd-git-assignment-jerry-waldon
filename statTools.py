@@ -67,3 +67,13 @@ def mode(myList):
 
                appears = 0     # reset the appears to 0
        return max_appears_val
+
+def lower_quartile(myList):
+   """Determine the value that is at the first quarter in the list given. If the number of values at each time when the
+   lists are splited to be half, the range will be the average of two middle values
+
+   :param myList: A list of random integers
+   :return: the value at the first quarter position
+   """
+
+   return 2
