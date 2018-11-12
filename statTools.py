@@ -52,4 +52,4 @@ def median(my_list):
         my_list = bubble_sort(my_list)
 
         # return the median number of the sorted list
-        return (my_list[(len(my_list) + 1) // 2] + my_list[(len(my_list) + 2) // 2]) / 2
+        return (my_list[(len(my_list) + 1) // 2 - 1] + my_list[(len(my_list) + 2) // 2 - 1]) / 2
