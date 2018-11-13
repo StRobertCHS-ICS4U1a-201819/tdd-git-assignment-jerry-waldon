@@ -49,3 +49,22 @@ def range(my_list):
 
         # return the range of my_list
         return my_list[len(my_list) - 1] - my_list[0]
+
+
+def upper_quartile(my_list):
+    """get the median number of the second half of the input list
+
+    :param my_list: a list of input
+    :return: the upper quartile of the input list
+    """
+
+    # return 0 if the list is empty
+    if len(my_list) == 0:
+        return 0
+
+    else:
+        # sort my_list
+        my_list.sort()
+
+        # return the upper quartile of my_list
+        return median(my_list[(len(my_list) + 1) // 2:])

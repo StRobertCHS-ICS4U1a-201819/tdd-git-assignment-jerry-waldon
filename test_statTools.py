@@ -65,3 +65,10 @@ def test_range_unusual2():
 
 def test_range_unusual3():
     assert(range([-1, 3, -5, 6]) == 11)
+
+
+"upper_quartile tests"
+
+
+def test_upper_quartile_empty():
+    assert(upper_quartile([]) == 0)
