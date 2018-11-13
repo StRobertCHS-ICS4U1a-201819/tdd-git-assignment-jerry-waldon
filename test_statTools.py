@@ -53,3 +53,7 @@ def test_range_basic1():
 
 def test_range_basic2():
     assert(range([9, 8, 7, 6, 5]) == 4)
+
+
+def test_range_unusual1():
+    assert(range([1, 1, 1, 1, 1, 1, 1]) == 0)
