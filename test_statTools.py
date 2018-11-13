@@ -49,3 +49,7 @@ def test_range_empty():
 
 def test_range_basic1():
     assert(range([1, 2, 3, 4, 5]) == 4)
+
+
+def test_range_basic2():
+    assert(range([9, 8, 7, 6, 5]) == 4)
