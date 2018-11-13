@@ -26,7 +26,7 @@ def median(my_list):
 
     else:
         # sort my_list
-        my_list.sort
+        my_list.sort()
 
         # return the median number of the sorted list
         return (my_list[(len(my_list) + 1) // 2 - 1] + my_list[(len(my_list) + 2) // 2 - 1]) / 2
@@ -45,7 +45,7 @@ def range(my_list):
 
     else:
         # sort my_list
-        my_list.sort
+        my_list.sort()
 
         # return the range of my_list
         return my_list[len(my_list) - 1] - my_list[0]

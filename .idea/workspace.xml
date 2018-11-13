@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa486fe7-94f2-4ad4-89f4-71d77ad9991d" name="Default Changelist" comment="import packages">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/statTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/statTools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_statTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_statTools.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,14 +36,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="6122" />
+          <entry key="py" value="6177" />
           <entry key="txt" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="6122" />
+          <entry key="Python" value="6177" />
         </counts>
       </usages-collector>
     </session>
@@ -64,26 +62,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="555">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
-                <marker date="1542075060210" expanded="true" signature="306:311" ph="..." />
+                <marker date="1542076031928" expanded="true" signature="306:311" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_statTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            <state relative-caret-position="283">
+              <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
               <folding>
                 <element signature="e#309#322#0" expanded="true" />
-                <marker date="1542073128204" expanded="true" signature="389:394" ph="..." />
+                <marker date="1542076656139" expanded="true" signature="389:394" ph="..." />
               </folding>
             </state>
           </provider>
@@ -97,8 +95,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test_statTools.py" />
         <option value="$PROJECT_DIR$/statTools.py" />
+        <option value="$PROJECT_DIR$/test_statTools.py" />
       </list>
     </option>
   </component>
@@ -190,15 +188,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_statTools_py - 2018.11.12 at 20h 35m 10s.xml">
-      <configuration name="pytest in test_statTools.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_statTools_py - 2018.11.12 at 20h 35m 47s.xml">
-      <configuration name="pytest in test_statTools.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_statTools_py - 2018.11.12 at 20h 37m 28s.xml">
-      <configuration name="pytest in test_statTools.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_statTools_py - 2018.11.12 at 20h 38m 48s.xml">
       <configuration name="pytest in test_statTools.py" configurationId="tests" />
     </history-entry>
@@ -220,6 +209,15 @@
     <history-entry file="pytest_in_test_statTools_py - 2018.11.12 at 21h 11m 00s.xml">
       <configuration name="pytest in test_statTools.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test_statTools_py - 2018.11.12 at 21h 27m 12s.xml">
+      <configuration name="pytest in test_statTools.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_statTools_py - 2018.11.12 at 21h 34m 24s.xml">
+      <configuration name="pytest in test_statTools.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_statTools_py - 2018.11.12 at 21h 37m 36s.xml">
+      <configuration name="pytest in test_statTools.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -230,7 +228,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3929078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7390071" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -262,23 +260,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statTools.py">
+    <entry file="file://$PROJECT_DIR$/test_statTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="283">
+          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
           <folding>
-            <marker date="1542075060210" expanded="true" signature="306:311" ph="..." />
+            <element signature="e#309#322#0" expanded="true" />
+            <marker date="1542076656139" expanded="true" signature="389:394" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_statTools.py">
+    <entry file="file://$PROJECT_DIR$/statTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        <state relative-caret-position="555">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
-            <element signature="e#309#322#0" expanded="true" />
-            <marker date="1542073128204" expanded="true" signature="389:394" ph="..." />
+            <marker date="1542076031928" expanded="true" signature="306:311" ph="..." />
           </folding>
         </state>
       </provider>
