@@ -84,3 +84,7 @@ def test_upper_quartile_basic2():
 
 def test_upper_quartile_unusual1():
     assert(upper_quartile([1, 2, 3, 4]) == 3.5)
+
+
+def test_upper_quartile_unusual2():
+    assert(upper_quartile([1, 1, 1, 1, 1, 1]) == 1)
