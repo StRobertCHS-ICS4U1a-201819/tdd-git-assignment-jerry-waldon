@@ -45,3 +45,7 @@ def test_median_unusual3():
 
 def test_range_empty():
     assert(range([]) == 0)
+
+
+def test_range_basic1():
+    assert(range([1, 2, 3, 4, 5]) == 4)
