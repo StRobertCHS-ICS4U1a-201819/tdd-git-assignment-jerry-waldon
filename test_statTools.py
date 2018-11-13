@@ -61,3 +61,7 @@ def test_range_unusual1():
 
 def test_range_unusual2():
     assert(range([4, 6, 2, 9, 0, 3]) == 9)
+
+
+def test_range_unusual3():
+    assert(range([-1, 3, -5, 6]) == 11)
