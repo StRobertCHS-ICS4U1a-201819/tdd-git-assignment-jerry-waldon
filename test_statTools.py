@@ -38,3 +38,10 @@ def test_median_unusual2():
 
 def test_median_unusual3():
     assert(median([9, 6, 4, 2]) == 5)
+
+
+"range test"
+
+
+def test_range_empty():
+    assert(range([]) == 0)
