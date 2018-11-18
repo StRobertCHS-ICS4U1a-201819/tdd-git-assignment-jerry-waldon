@@ -160,6 +160,11 @@ def test_standard_deviation_unusual2():
     assert(standard_deviation([1, 1, 1, 1, 1]) == 0)
 
 
+# unusual negative case
+def test_standard_deviation_unusual3():
+    assert(standard_deviation([-3, 1, 0, 9, -5]) == 4.80)
+
+
 # string case
 def test_standard_deviation_string():
     assert(standard_deviation(["hd", "s"]) == "There is a string in the list, please enter a integer list.  ")
