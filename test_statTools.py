@@ -155,6 +155,11 @@ def test_standard_deviation_unusual1():
     assert(standard_deviation([1, 2, 3, 4, 5, 6]) == 1.71)
 
 
+# unusual same number case
+def test_standard_deviation_unusual2():
+    assert(standard_deviation([1, 1, 1, 1, 1]) == 0)
+
+
 # string case
 def test_standard_deviation_string():
     assert(standard_deviation(["hd", "s"]) == "There is a string in the list, please enter a integer list.  ")
