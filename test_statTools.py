@@ -145,6 +145,16 @@ def test_standard_deviation_basic1():
     assert(standard_deviation([1, 2, 3, 4, 5]) == 1.41)
 
 
+# common messy odd case
+def test_standard_deviation_basic2():
+    assert(standard_deviation([2, 1, 5, 3, 4]) == 1.41)
+
+
+# unusual even case
+def test_standard_deviation_unusual1():
+    assert(standard_deviation([1, 2, 3, 4, 5, 6]) == 1.71)
+
+
 # string case
 def test_standard_deviation_string():
     assert(standard_deviation(["hd", "s"]) == "There is a string in the list, please enter a integer list.  ")
